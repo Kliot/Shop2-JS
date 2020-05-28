@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" lang="en" content="store">
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="./css/screen.css" >
+	
+</head>
+<body>
+<!--wrapper-->
+	<div class="wrapper">
+		<!--header-->
+		<header class="container">
+			<div class="header-top flex">
+				<div class="logo">
+					<a href="./index.html" class="logo__link">SH</a>
+				</div>
+				<div class="header-bottom" id="menu">
+					<hr>
+				<ul class="menu flex">
+					<li class="menu__item"><a href="./catalog.html" class="menu__link">Women</a></li>
+					<li class="menu__item"><a href="./catalog.html" class="menu__link">Men</a></li>
+					<li class="menu__item"><a href="./catalog.html" class="menu__link">Kids</a></li>
+					<li class="menu__item"><a href="./catalog.html" class="menu__link">Coming Soon</a></li>
+				</ul>
+			</div>
+			<div class="search" id="searchBlock">
+				<form action="#" method="get" class="search__form" id="search__form">
+                    <div class="search__container" id="search__container">
+                    	<input name="search" placeholder="Search Something..." type="search" class="search__input" id="search__input">
+                    </div>
+                    <a href="#" class="search__button" id="search"></a>
+                </form>
+			</div>
+				<div class="user-info flex">
+					<div class="user-info__basket">
+						<a href="./cart.html" class="user-info__basket-link">Basket <span id="sumProduct">(0)</span> <span id="sumPrice"></span></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</header>
+		<!--end header-->
+		<!--content-->
+		<div class="content">
+			<!--arrivals-->
+			<div class="arrivals">
+				<h1>Hazy Shade of spring</h1>
+				<p class="arrivals__text">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</p>
+				<div class="catalog__button-inner">
+					<a href="./catalog.html" class="catalog__button">Check new arrivals</a>
+				</div>
+			</div>
+			<!--end arrivals-->
+			<!--squares-->
+			<div class="squares">
+				<ul class="squares__menu flex">
+					<li class="squares__item">
+						<a href="./catalog.html" class="squares__link"></a>
+					</li>
+					<li class="squares__item">
+						<a href="./details.html" class="squares__link">
+							<h3>elegant shoes</h3>
+							<span>BRAIDED LEATHER</span>
+						</a>
+					</li>
+					<li class="squares__item">
+						<a href="./catalog.html" class="squares__link">
+						</a>
+					</li>
+					<li class="squares__item">
+						<a href="./details.html" class="squares__link">
+							<h3>elegant shoes</h3>
+							<span>BRAIDED LEATHER</span>
+						</a>
+					</li>	
+				</ul>
+				<ul class="squares__menu flex">
+					<li class="squares__item">
+						<a href="./details.html" class="squares__link">
+							<h3>elegant shoes</h3>
+							<span>BRAIDED LEATHER</span>
+						</a>
+					</li>
+					<li class="squares__item">
+						<a href="./catalog.html" class="squares__link">
+						</a>
+					</li>
+					<li class="squares__item">
+						<a href="./details.html" class="squares__link">
+							<h3>elegant shoes</h3>
+							<span>BRAIDED LEATHER</span>
+							</a>
+					</li>
+					<li class="squares__item">
+						<a href="./catalog.html" class="squares__link"></a>
+					</li>
+				</ul>
+			</div>
+			<!--end squares-->
+
+			<!--sing up-->
+			<div class="sing-up container">
+				<h2 class="sing-up__heading">sign up to receive our updates</h2>
+				<p class="sing-up__text">Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus.</p>
+				<form name="singUpForm" action="#" method="get" class="sing-up__form">
+                    <div class="sing-up__container flex">
+                    	<div class="prompt" id="prompt">
+                    	</div>
+                    	<input name="singUpInput" placeholder="Your e-mail" type="email" required class="sing-up__input">
+                    	<a href="#" class="sing-up__button" onclick="ValidEmail(document.singUpForm.singUpInput)">add</a>
+                    </div>
+                </form>
+			</div>		
+			<!--end sing up-->
+
+		<!--slider-->
+		
+		<div class="slider-container">
+			<ul id="slides" class="slider__menu">
+				<li class="slider__item"><a href="./details.html" class="slider__link">1</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">2</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">
+				3
+				</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">4</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">5</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">6</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">7</a></li>
+				<li class="slider__item"><a href="./details.html" class="slider__link">8</a></li>
+			</ul>
+			<div class="buttons">
+				<button class="buttons__controls buttons__controls-prev" id="previous"></button>
+				<button class="buttons__controls buttons__controls-next slider__control_show" id="next"></button>
+			</div>
+		</div>
+		<!--end slider-->
+		</div>
+		<!--end content-->
+
+	</div>
+<!--end wrapper-->
+<!--footer-->
+<footer>
+	<div class="container">
+		<hr>
+		<div class="footer-top flex">
+			<div class="footer-top__block">
+				<h3 class="footer-top__heading">Collection</h3>
+				<ul class="footer-top__menu">
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Woman (1725)</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Men (635)</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Kids (2514)</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Comming Soon (76)</a></li>
+				</ul>
+			</div>
+			<div class="footer-top__block">
+				<h3 class="footer-top__heading">Site</h3>
+				<ul class="footer-top__menu">
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Terms of Service</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Privacy Policy </a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Copyright Policy</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Press Kit</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Support</a></li>
+				</ul>
+			</div>
+			<div class="footer-top__block">
+				<h3 class="footer-top__heading">Shop</h3>
+				<ul class="footer-top__menu">
+					<li class="footer-top__item"><a href="#" class="footer-top__link">About us</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Shipping Metods</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Career</a></li>
+					<li class="footer-top__item"><a href="#" class="footer-top__link">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-top__block footer-top__block_social">
+				<h3 class="footer-top__heading">social</h3>
+				<div class="copy">
+					<p>Shoper is made with love in Warsaw,<br/> 2014 © All rights reserved. El Passion</p>
+				</div>
+				<div class="social">
+					<ul class="social__menu flex">
+						<li class="social__item"><a href="#" class="social__link social__link_facebook"></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link_twitter"></a></li>
+						<li class="social__item"><a href="#" class="social__link social__link_ins"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--end footer-->
+<script src="./js/main.js"></script>
+<script>
+	SliderFunction();
+	CartDataValue();
+</script>
+<script>
+	function ValidEmail(email) {
+		event.preventDefault();
+		var reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		var emailRes = document.getElementById('prompt');
+		if(email.value.match(reg)) {
+			emailRes.innerHTML = "We added <strong>" + email.value + "</strong> to our list";
+			document.singUpForm.singUpInput.focus();
+			return true;
+		}
+		else{
+			emailRes.innerHTML = "Please enter valid e-mail";
+			document.singUpForm.singUpInput.focus();
+			return false;
+		}
+	}
+</script>	
+
+</body>
+</html>
